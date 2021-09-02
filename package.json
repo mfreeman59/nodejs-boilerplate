@@ -2,8 +2,9 @@
   "name": "nodejs-boilerplate",
   "version": "0.1.0",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "dev": "ts-node src/index.ts",
+    "dev": "node --loader ts-node/esm",
     "dev:watch": "ts-node-dev --respawn src/index.ts"
   },
   "repository": "git@github.com:mfreeman59/nodejs-boilerplate.git",
@@ -18,7 +19,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.3.2",
     "ts-node": "^10.2.1",
-    "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.2"
   }
 }
